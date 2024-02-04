@@ -1,7 +1,9 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 import { Helmet } from 'react-helmet'
 
+import Title from '../components/title'
 import './home.css'
 
 const Home = (props) => {
@@ -14,13 +16,31 @@ const Home = (props) => {
       <div className="navbar-container">
         <div className="max-width">
           <div className="home-logo">
-            <img alt="image" src="/group%202.svg" className="home-image" />
-            <span className="brandName">Svayu</span>
+            <img
+              alt="image"
+              src="/svayu-logo-crop-200h.jpg"
+              className="home-image"
+            />
+            <img alt="image" src="/group%202.svg" className="home-image1" />
           </div>
           <div className="home-links">
-            <span className="home-text01 navbarLink">Lipee Indic Tech</span>
-            <span className="home-text02 navbarLink">iOT</span>
-            <span className="home-text03 navbarLink">Blog</span>
+            <a
+              href="https://www.lipee.in"
+              target="_blank"
+              rel="noreferrer noopener"
+              className="home-text navbarLink"
+            >
+              Lipee Indic Tech
+            </a>
+            <a
+              href="https://www.svayu.in/#iot"
+              target="_blank"
+              rel="noreferrer noopener"
+              className="home-link navbarLink"
+            >
+              iOT
+            </a>
+            <span className="home-text01 navbarLink">Blog</span>
             <button className="home-button button-secondary button">
               Log in
             </button>
@@ -41,12 +61,12 @@ const Home = (props) => {
             <span className="home-subtitle beforeHeading">
               ENABLING Bharat 
             </span>
-            <h1 className="home-title">Lipee Indic Keyboards</h1>
+            <Title></Title>
             <span className="home-description">
-              <span className="home-text04">
+              <span className="home-text02">
                 Rejuvenate Your Indic Language Connection
               </span>
-              <br className="home-text05"></br>
+              <br className="home-text03"></br>
               <br></br>
               <span>
                 We bet you type in your mother tongue using your own script. We
@@ -67,13 +87,13 @@ const Home = (props) => {
                 href="https://play.google.com/store/apps/details?id=in.svayu.lipi"
                 target="_blank"
                 rel="noreferrer noopener"
-                className="home-link button button-gradient"
+                className="home-link1 button button-gradient"
               >
                 Download
               </a>
             </div>
           </div>
-          <div className="home-image1">
+          <div className="home-image2">
             <img
               alt="image"
               src="/layout-main-400w.png"
@@ -88,25 +108,25 @@ const Home = (props) => {
             <img
               alt="image"
               src="/group%2018-1200w.png"
-              className="home-image2"
+              className="home-image3"
             />
           </div>
         </div>
       </div>
       <div className="section-container">
         <div className="home-max-width2 max-width">
-          <div className="home-image3"></div>
+          <div className="home-image4"></div>
           <img
             alt="image"
             src="/iot_devices-1200w.jpg"
             className="home-hero-image1"
           />
           <div className="home-content1">
-            <span className="home-text12 beforeHeading">Security</span>
-            <h1 className="home-text13">
+            <span className="home-text10 beforeHeading">iOT and security</span>
+            <h1 className="home-text11">
               We have ideas to change how one connects to share
             </h1>
-            <span className="home-text14">
+            <span className="home-text12">
               Secure mobile connections for service delivery platforms
             </span>
             <div className="home-container2">
@@ -117,33 +137,67 @@ const Home = (props) => {
           </div>
         </div>
       </div>
-      <div className="home-section1 section-container"></div>
-      <div className="home-section2 section-container">
-        <div className="home-max-width3 max-width"></div>
-      </div>
       <footer className="home-footer">
         <div className="home-links-container">
           <div className="home-container3">
             <div className="footer-column">
-              <span className="home-text15">Product</span>
-              <span className="home-text16">Lipee Indic Keyboards</span>
-              <span className="home-text17">Blog</span>
+              <Link to="/" className="home-navlink">
+                Product
+              </Link>
+              <a
+                href="https://www.lipee.in"
+                target="_blank"
+                rel="noreferrer noopener"
+                className="home-link2"
+              >
+                Lipee Indic Keyboards
+              </a>
+              <span className="home-text13">Blog</span>
+            </div>
+            <div className="home-container5 footer-column">
+              <span className="home-text14">App</span>
+              <a
+                href="https://play.google.com/store/apps/details?id=in.svayu.lipi"
+                target="_blank"
+                rel="noreferrer noopener"
+                className="home-link3"
+              >
+                <span>Download Android app</span>
+                <br></br>
+                <br></br>
+                <br></br>
+              </a>
             </div>
             <div className="footer-column">
-              <span className="home-text18">App</span>
-              <span className="home-text19">Download Android app</span>
-              <span>Privacy Policy</span>
+              <span className="home-text19">Company</span>
+              <span className="home-text20">About us</span>
             </div>
             <div className="footer-column">
-              <span className="home-text21">Company</span>
-              <span className="home-text22">About us</span>
-              <span>Contact</span>
-            </div>
-            <div className="footer-column">
-              <span className="home-text24">Follow</span>
-              <span className="home-text25">Twitter</span>
-              <span className="home-text26">Linkedln</span>
-              <span>Youtube</span>
+              <span className="home-text21">Follow</span>
+              <a
+                href="https://www.twitter.com/SvayuOfficial"
+                target="_blank"
+                rel="noreferrer noopener"
+                className="home-link4"
+              >
+                Twitter
+              </a>
+              <a
+                href="https://www.linkedin.com/in/svayuit"
+                target="_blank"
+                rel="noreferrer noopener"
+                className="home-link5"
+              >
+                Linkedln
+              </a>
+              <a
+                href="https://www.youtube.com/@lipeeitpvtltdgoa632"
+                target="_blank"
+                rel="noreferrer noopener"
+                className="home-link6"
+              >
+                Youtube
+              </a>
             </div>
           </div>
         </div>

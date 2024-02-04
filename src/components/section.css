@@ -1,0 +1,5 @@
+.section-section {
+  border: 2px dashed rgba(120, 120, 120, 0.4);
+  position: relative;
+  background-color: var(--dl-color-scheme-green100);
+}
